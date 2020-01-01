@@ -2,8 +2,11 @@ apiVersion: v1
 appVersion: "1.1.2"
 description: Calibre OPDS (and HTML) PHP Server - web-based light alternative to Calibre content server / Calibre2OPDS to serve ebooks (epub, mobi, pdf, ...) 
 name: cops
-version: 0.1.0
+version: 0.1.1
 home: https://blog.slucas.fr/projects/calibre-opds-php-server/
+icon: https://raw.githubusercontent.com/seblucas/cops/master/images/icons/icon144.png
+sources:
+  - https://github.com/seblucas/cops
 maintainers:
   - name: Gavin Mogan
     email: helm@gavinmogan.com
