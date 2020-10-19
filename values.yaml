@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: linuxserver/cops
-  tag: 1.1.2-ls1
+  tag: 1.1.3-ls68
   pullPolicy: IfNotPresent
 
 nameOverride: ""
