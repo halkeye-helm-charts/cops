@@ -1,4 +1,5 @@
 apiVersion: apps/v1
+{{- $podAnnotations := .Values.podAnnotations }}
 kind: Deployment
 metadata:
   name: {{ include "cops.fullname" . }}
@@ -26,9 +27,9 @@ spec:
     metadata:
       labels:
         {{- include "cops.selectorLabels" . | nindent 8 }}
-      {{- if .Values.podAnnotations }}
+      {{- if $podAnnotations }}
       annotations:
-        {{- range $key, $value := .Values.podAnnotations }}
+        {{- range $key, $value := $podAnnotations }}
         {{ $key }}: {{ $value | quote }}
         {{- end }}
       {{- end }}
